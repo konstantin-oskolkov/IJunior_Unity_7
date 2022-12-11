@@ -13,11 +13,6 @@ public class EnemyPatrol : MonoBehaviour
    private Coroutine _coroutine;
    private int _currentPoint;
 
-   public void GetPath(List<Transform> points)
-   {
-      _points = points;
-   }
-
    private void Start()
    {
       _sprite = GetComponent<SpriteRenderer>();
@@ -31,6 +26,11 @@ public class EnemyPatrol : MonoBehaviour
 
       if (transform.position.x == _position.x)
          Wait();
+   }
+
+   public void GetPath(List<Transform> points)
+   {
+      _points = points;
    }
 
    private void Move()
