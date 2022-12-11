@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-   [SerializeField] float _health;
-   [SerializeField] float _damage;
+   [SerializeField] private float _health;
+   [SerializeField] private float _damage;
 }
